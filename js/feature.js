@@ -38,9 +38,9 @@ document.getElementById('History-first').addEventListener('click', function(){
    div.classList = "bg-white p-3 rounded-md border-l-2 border-indigo-500";
    div.innerHTML = `
          <p class="text-xs text-gray-500">${new Date().toLocaleDateString()}</p>
-         <p class="text-xs text-gray-500">income: ${incomeInput}</p>
-         <p class="text-xs text-gray-500">expenses: ${totalCost}</p>
-        <p class="text-xs text-gray-500">balance: ${remainBalance}</p>
+         <p class="text-xs text-gray-500">income: ${incomeInput.toFixed(2)}</p>
+         <p class="text-xs text-gray-500">expenses: ${totalCost.toFixed(2)}</p>
+        <p class="text-xs text-gray-500">balance: ${remainBalance.toFixed(2)}</p>
    `;
     document.getElementById('div-container').appendChild(div)
 
